@@ -1,0 +1,11 @@
+disciplina,professor,carga_semanal,duplo_periodo,sala_especial
+Matemática,Prof. Marta,4,nao,
+Português,Prof. Nuno,4,nao,
+Física,Prof. Sofia,2,sim,Laboratório
+Química,Prof. Sofia,2,sim,Laboratório
+Biologia,Prof. Tiago,2,nao,
+História,Prof. Ursula,2,nao,
+Geografia,Prof. Ursula,2,nao,
+Inglês,Prof. Vasco,3,nao,
+Educação Física,Prof. Rui,2,sim,Ginásio
+Artes,Prof. Zélia,1,nao,
