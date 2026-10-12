@@ -98,9 +98,9 @@ app._unparsable_cell(
             for d in DISCS:
                 for dia in DIAS:
                     if duploPeriodos[d] == 'nao':
-                        model.Add(sum(x[t, d, dia, p] for p in PERIODOS) = 1) # garante que se a disciplina nao for de duplo periodos num dia d apenas ocoore 1 vez
+                        model.Add(sum(x[t, d, dia, p] for p in PERIODOS) <= 1) # garante que se a disciplina nao for de duplo periodos num dia d apenas ocoore 1 vez
                     else:
-                        model.Add(sum(x[t,d,dia,p] for p in PERIODOS = 2 ) # garante que se a disciplina nao for de duplo periodos num dia d apenas ocoore 2 vezes mas nao garante que sejam seguidos
+                        model.Add(sum(x[t,d,dia,p] for p in PERIODOS) <= 2 ) # garante que se a disciplina nao for de duplo periodos num dia d apenas ocoore 2 vezes mas nao garante que sejam seguidos
     
     #R4 Disciplinas marcadas `duplo_periodo=sim` só podem ser dadas em blocos de 2 tempos consecutivos, no mesmo dia (nunca um tempo isolado).
     
